@@ -73,7 +73,8 @@
 
       } else if (navigationMode == TTNavigationModeCreate ||
                  navigationMode == TTNavigationModeShare) {
-        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        self.accessoryType = UITableViewCellAccessoryNone;
+        //        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 
       } else {
         self.accessoryType = UITableViewCellAccessoryNone;
