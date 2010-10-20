@@ -50,7 +50,7 @@ static const CGFloat kPagerHeight = 20.0f;
 static const CGFloat kWobbleRadians = 1.5f;
 static const CGFloat kSpringLoadFraction = 0.18f;
 
-static const NSTimeInterval kEditHoldTimeInterval = 1;
+static const NSTimeInterval kEditHoldTimeInterval = 100;
 static const NSTimeInterval kSpringLoadTimeInterval = 0.5;
 static const NSTimeInterval kWobbleTime = 0.07;
 
@@ -83,7 +83,7 @@ static const NSInteger kDefaultColumnCount = 3;
     _scrollView.scrollsToTop = NO;
     _scrollView.showsVerticalScrollIndicator = NO;
     _scrollView.showsHorizontalScrollIndicator = NO;
-    _scrollView.alwaysBounceHorizontal = YES;
+    _scrollView.alwaysBounceHorizontal = NO;
     _scrollView.pagingEnabled = YES;
     _scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     _scrollView.delaysContentTouches = NO;
