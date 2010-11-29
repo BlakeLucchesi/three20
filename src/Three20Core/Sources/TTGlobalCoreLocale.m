@@ -42,7 +42,7 @@ NSString* TTLocalizedString(NSString* key, NSString* comment) {
           stringByAppendingPathComponent:@"Three20.bundle"];
     bundle = [[NSBundle bundleWithPath:path] retain];
   }
-
+  return key;
   return [bundle localizedStringForKey:key value:key table:nil];
 }
 
